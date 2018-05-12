@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.krishnchinya.hackdfw.Registration"
+    android:background="@android:color/background_light">
+
+<LinearLayout
+    android:id="@+id/activity_user_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingTop="30px"
+    android:paddingRight="30px"
+    android:paddingBottom="30px"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="71dp" android:src="@drawable/full_width"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_etFirstName"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/firstname"
+        android:id="@+id/etFirstName"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_etLastName"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/lastname"
+        android:ems="10"
+        android:id="@+id/etLastName"
+        android:layout_marginTop="5dp"
+        />
+</android.support.design.widget.TextInputLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" android:text="Gender"-->
+            <!--android:id="@+id/etgender" android:enabled="false"/>-->
+
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="5dp" android:layout_toRightOf="@id/etgender"-->
+        <!--android:id="@+id/rgGender">-->
+
+        <!--<RadioButton-->
+            <!--style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Male"-->
+            <!--android:id="@+id/btnMale"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--/>-->
+
+        <!--<RadioButton-->
+            <!--style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Female"-->
+            <!--android:id="@+id/btnFeale"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--/>-->
+
+    <!--</RadioGroup>-->
+
+    <!--</RelativeLayout>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_etdob">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etdob"
+            android:hint="@string/dob"
+            android:layout_weight="0.25" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/input_etPhone">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:id="@+id/etPhone"
+        android:inputType="phone"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/input_etEmail">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/err_msg_name"
+            android:id="@+id/etEmail"
+            android:layout_marginTop="5dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/input_carno">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Number"
+            android:id="@+id/etcarNo"
+            android:inputType="text"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/HomePinCode">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Home Address Pin Code"
+            android:id="@+id/etpinCode"
+            android:inputType="number"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/OfficePincode">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Office Pincode"
+            android:id="@+id/etOfficepin"
+            android:inputType="number"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/input_etpassword">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/input_etrepass">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/repass"
+            android:id="@+id/etRePass"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/singup"
+    android:id="@+id/btnSignup"
+    style="@style/Widget.AppCompat.Button.Colored"
+    />
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.krishnchinya.hackdfw.MainMenu"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll1">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency"
+            android:layout_gravity="right"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/From"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="From">
+
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/To"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="To"
+        >
+
+    </AutoCompleteTextView>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" android:text="retrive"
+            android:id="@+id/Retrive"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <!--<include layout="@layout/fragment_map" android:id="@+id/container" android:layout_height="match_parent" android:layout_width="match_parent"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/modes"
+            android:layout_marginBottom="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/ll2"
+        android:layout_below="@+id/ll1">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="5px">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/rides"
+            android:layout_marginBottom="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>
